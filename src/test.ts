@@ -3,7 +3,7 @@ import {
   GoogleGenerativeAI,
 } from "@google/generative-ai";
 
-const api_key = "AIzaSyCIZjjNfd9m6A8WM944wHcdNGWk9JHrEMQ";
+const api_key = "";
 
 export default async function generateContent(query: string) {
   const genAI = new GoogleGenerativeAI(api_key);
