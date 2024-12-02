@@ -1,0 +1,161 @@
+/* General styles */
+.app-container {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 16px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for better effect */
+  border: 2px solid white; /* White border */
+}
+
+/* Heading styles */
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  font-size: 24px;
+  color: #1da1f2;
+  font-weight: bold;
+}
+
+.app-header p {
+  font-size: 14px;
+  color: #657786;
+}
+
+.card {
+  padding: 10px 0;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 30px; /* Curved button */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #1a91da;
+}
+
+/* Styling for the Gemini response appended to the tweet */
+.response-element {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(29, 155, 240, 0.5); /* Light blue border */
+  border-radius: 12px;
+  background-color: rgba(29, 155, 240, 0.1); /* Light blue background */
+  color: #1da1f2; /* Twitter's blue color */
+  font-size: 14px;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Media queries for responsive design */
+@media (prefers-color-scheme: dark) {
+  .app-container {
+    background-color: #242424;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .app-header h1 {
+    color: #1da1f2;
+  }
+
+  .app-header p {
+    color: #a0a0a0;
+  }
+
+  button {
+    background-color: #333333;
+    color: #fff;
+  }
+
+  button:hover {
+    background-color: #1a91da;
+  }
+
+  footer {
+    color: #a0a0a0;
+  }
+
+  .response-element {
+    border: 1px solid rgba(29, 155, 240, 0.5); /* Same blue border for dark mode */
+    background-color: rgba(
+      29,
+      155,
+      240,
+      0.1
+    ); /* Same background for dark mode */
+    color: #1da1f2; /* Keep blue text in dark mode */
+  }
+}
+
+/* Developer info section */
+/* Make sure the footer stays at the bottom */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.developer-info {
+  font-size: 12px; /* Reduced font size for a cleaner look */
+  font-family: "Courier New", Courier, monospace;
+  color: #555; /* Darker text color for better readability */
+  line-height: 1.4;
+  text-align: center;
+  margin-top: auto; /* Pushes the footer to the bottom of the page */
+  padding: 10px 0; /* Vertical padding for the footer */
+}
+
+.developer-info p {
+  margin: 3px 0; /* Reduced margin for a tighter layout */
+}
+
+.developer-info .name {
+  font-weight: bold;
+  margin-bottom: 8px; /* Space between name and links */
+}
+
+.developer-info .contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* Increased space between links */
+}
+
+.developer-info a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.developer-info a:hover {
+  text-decoration: underline;
+}
+
+/* Normal content styling for "Made with ❤️" */
+.made-with-love {
+  font-size: 14px;
+  color: #888; /* Subtle text color */
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Footer info styling */
+.footer-info {
+  font-size: 14px;
+  color: #888; /* Same subtle color as the developer info */
+  margin-top: 30px;
+  text-align: center;
+}
