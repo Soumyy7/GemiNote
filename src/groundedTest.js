@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const genAI = new GoogleGenerativeAI("AIzaSyCIZjjNfd9m6A8WM944wHcdNGWk9JHrEMQ");
+const genAI = new GoogleGenerativeAI("");
 const model = genAI.getGenerativeModel(
   {
     model: "models/gemini-1.5-pro-002",
